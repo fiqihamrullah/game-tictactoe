@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8FD4C683-FAC0-4D2F-A388-DD72ED860CFD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>tictactoebacktrack.My.MyApplication</StartupObject>
+    <RootNamespace>tictactoebacktrack</RootNamespace>
+    <AssemblyName>tictactoebacktrack</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>tictactoebacktrack.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>tictactoebacktrack.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Board.vb" />
+    <Compile Include="Enemy.vb" />
+    <Compile Include="FrmAbout.Designer.vb">
+      <DependentUpon>FrmAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuUtama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuUtama.Designer.vb">
+      <DependentUpon>FrmMenuUtama.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOptions.Designer.vb">
+      <DependentUpon>FrmOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPlay.Designer.vb">
+      <DependentUpon>FrmPlay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPlay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPopUpGameOver.Designer.vb">
+      <DependentUpon>FrmPopUpGameOver.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPopUpGameOver.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPopUpLevel.Designer.vb">
+      <DependentUpon>frmPopUpLevel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPopUpLevel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPopUpSimbol.Designer.vb">
+      <DependentUpon>frmPopUpSimbol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPopUpSimbol.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modulbantu.vb" />
+    <Compile Include="Move.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Node.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmMenuUtama.resx">
+      <DependentUpon>FrmMenuUtama.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPlay.resx">
+      <DependentUpon>FrmPlay.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPopUpGameOver.resx">
+      <DependentUpon>FrmPopUpGameOver.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPopUpLevel.resx">
+      <DependentUpon>frmPopUpLevel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPopUpSimbol.resx">
+      <DependentUpon>frmPopUpSimbol.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gbr\bgmenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gbr\btnplay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gbr\btnhelp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gbr\bgpop1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gbr\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gbr\bgplay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gbr\bgpop2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gbr\btnexit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gbr\btnselect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gbr\circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gbr\computer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gbr\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gbr\popupresult.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gbr\user1_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gbr\btntryagain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gbr\circle3x3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gbr\cross3x3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmAbout.resx">
+      <DependentUpon>FrmAbout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOptions.resx">
+      <DependentUpon>FrmOptions.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="suara game\buat backsoud game\back1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="suara game\buat backsoud game\back2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="suara game\Buat suara win n lose, button\click.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="suara game\Buat suara win n lose, button\draw.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="suara game\Buat suara win n lose, button\gameover.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="suara game\Buat suara win n lose, button\winnerofgame.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gbr\btnoptions.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gbr\options.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gbr\about.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gbr\screen_windows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gbr\user.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
