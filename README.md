@@ -20,7 +20,8 @@ Tic Tac Toe is a classic paper-and-pencil game for two players, X and O, who tak
 
 ## **Video Demo**
 
- Here's  [link](https://drive.google.com/file/d/17wGiQaJyNA6F9Dmn0o6rRUFO-A2_TOML/view?usp=drive_link)  to watch how it works
+https://github.com/fiqihamrullah/game-tictactoe/assets/68839112/7ad7401a-352d-46cf-a11a-60f24dce36a4
+
 
 
 ## Run Locally
